@@ -1,2 +1,14 @@
 # Smart-Crop-Fertilizer-Recommendation-Project
 This project is a Smart Crop and Fertilizer Recommendation System built using Machine Learning. It predicts the best crop based on soil nutrients and weather conditions and also suggests suitable fertilizers. The aim of this project is to help farmers improve crop yield and reduce fertilizer misuse.
+
+Agriculture plays a very important role in the economy and food security of a country like India. However, farmers often face difficulties in choosing the right crop and using the correct amount of fertilizer due to changing weather conditions, soil nutrient imbalance, and lack of proper guidance. Traditional farming decisions are usually based on experience or trial and error, which may lead to poor yield and excessive fertilizer usage. To overcome these challenges, this project proposes a Smart Crop and Fertilizer Recommendation System using Machine Learning.
+
+The main objective of this project is to recommend the most suitable crop for cultivation based on soil and environmental conditions and to provide fertilizer suggestions to maintain proper nutrient balance. The system uses a publicly available Crop Recommendation Dataset from Kaggle, which includes soil nutrients such as Nitrogen (N), Phosphorus (P), and Potassium (K), along with temperature, humidity, pH, and rainfall data. The dataset covers 22 major crops commonly grown in India and is well-structured for machine learning applications.
+
+Two supervised machine learning algorithms, Random Forest and XGBoost, are used to train the model. These ensemble learning methods are chosen because of their high accuracy and ability to handle complex relationships between features. After training and evaluation, Random Forest achieved slightly better and more consistent results, making it suitable for final deployment. The trained model predicts the best crop based on user-input soil and climate parameters.
+
+In addition to crop prediction, the system includes a fertilizer recommendation module. This module compares the user’s soil NPK values with the ideal nutrient requirements of the predicted crop and provides clear suggestions such as adding or reducing fertilizers like Urea, DAP, or MOP. This helps in avoiding overuse of fertilizers and supports sustainable farming practices.
+
+To improve real-time usability, the system integrates live weather data (temperature and humidity) using an external weather API. The complete system is implemented as a Streamlit web application, which allows users to easily enter inputs, visualize results using charts, and receive instant recommendations.
+
+Overall, this project demonstrates how machine learning and data analytics can be effectively applied to agriculture to support smarter decision-making, improve productivity, and promote sustainable farming.
